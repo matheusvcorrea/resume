@@ -96,7 +96,21 @@
 %	NAME AND CONTACT INFORMATION SECTION
 %-------------------------------------------------------------------------------
 
-\begin{cv}{\spacedallcaps{John Smith}}\vspace{1.5em} % Your name
+\begin{cv}{%
+    \noindent%
+    \begin{minipage}{.68\textwidth}%
+      \spacedallcaps{{\footnotesize RESUME}\\
+        MATHEUS V. CORREA%
+      }%
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}{.30\textwidth}%
+      \begin{flushright}%
+        \includegraphics[trim=320 130 460 210,clip,width=0.6\linewidth]{myfoto}
+      \end{flushright}%
+    \end{minipage}%
+  }\vspace{-.7em}
+  
 
   \noindent\spacedlowsmallcaps{Personal
     Information}\vspace{0.5em} % Personal information heading
