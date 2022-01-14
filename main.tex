@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Classicthesis-Styled CV
 % LaTeX Template
 % Version 1.0 (22/2/13)
@@ -12,50 +12,85 @@
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %-------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %-------------------------------------------------------------------------------
 
-\documentclass{scrartcl}
+\documentclass[fontsize=14pt,paper=a4]{scrartcl}
 
 \reversemarginpar % Move the margin to the left of the page 
 
-\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New
-% command defining the margin text style
+\usepackage[nochapters]{classicthesis}
+\usepackage[LabelsAligned]{currvita} % Style for the layout of the document
 
-\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the
-% style of the document
-\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of
-% the document
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{color}
+\pagenumbering{arabic}
+\usepackage{lastpage}
 
-\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at
-% the top
+\areaset[current]{390pt}{730pt} % need some extra space
+% \usepackage[pass,showframe]{geometry}
 
-\usepackage{hyperref} % Required for adding links	and customizing them
-\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set
-% link colors
+% New command defining the margin text style
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\footnotesize#1}}
 
-\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the
-% date box in each block
+% Basics font styles
+\renewcommand{\cvheadingfont}{\Large\color{Black}}
+\hypersetup{colorlinks, breaklinks, urlcolor=Blue, linkcolor=Blue}
+
+\newcommand{\ProfileInfo}[2]{\noindent\hangindent=2em\hangafter=0
+  \parbox{5em}{\small \textit{#1}\hspace{1em}} {\small #2}}
+
+\newcommand{\WorkEntry}[2]{\noindent\hangindent=2em\hangafter=0%
+  {\small #2} {(\small \textit{#1}})\vspace{.5em}}
+
+% Set the width of the date box in each block
+\newlength{\datebox}\settowidth{\datebox}{2020---2021}
+
+\date{} % Remove the date at bottom of the documment
 
 \newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0
-  \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2
-  #3 % Define a command for each new block - change spacing and font sizes here:
-  % #1 is the left margin, #2 is the italic date field and #3 is the
-  % position/employer/location field
-  \vspace{0.5em}} % Add some white space after each new entry
+  \parbox{\datebox}{\small \textit{#1}}\hspace{1em} {\small #2
+    #3}\vspace{.5em}}
 
 % Define a command for descriptions of each entry - change spacing and font
 % sizes here
 \newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
 
+\setlength{\textwidth}{146.8mm}
+\setlength{\oddsidemargin}{11.6mm}
+\setlength{\evensidemargin}{0.8mm}
+% \setlength{\topmargin}{-2.2mm}
+% \setlength{\textheight}{221.9mm}
+\setlength{\headheight}{14pt}
+% Put \marginparwidth onto the page
+\setlength{\marginparwidth}{\dimexpr\paperwidth-\oddsidemargin-1in-\textwidth-\marginparsep}
+
+% Footer
+\clearpairofpagestyles%
+\ihead{\headmark}%
+\rofoot*{%
+  \makebox[\dimexpr\marginparsep+\marginparwidth\relax]{%
+    \thepage\ of \pageref{LastPage}\hfill\rule{.55\marginparwidth}{6pt}%
+  }%
+}%
+\lofoot*{%
+  \footnotesize LinkedIn: %
+  \href{https://www.linkeding.com/in/matheusvcorrea}{linkedin.com/in/matheusvcorrea}%
+}
+
+\usepackage{tikz}
+
 %-------------------------------------------------------------------------------
 
 \begin{document}
 
-\thispagestyle{empty} % Stop the page count at the bottom of the first page
+\pagestyle{scrheadings}
+% \thispagestyle{empty} % Stop the page count
 
 %-------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
