@@ -1,4 +1,4 @@
-LATEXMK = latexmk -use-make -xelatex -pdf -shell-escape \
+LATEXMK = latexmk -use-make -xelatex -pdfxe -shell-escape \
 	-recorder \
 	-e '$$latex="latex -interaction=nonstopmode %O %S"' \
 	-e '$$pdflatex="pdflatex -interaction=nonstopmode %O %S"' 
