@@ -1,7 +1,7 @@
 LATEXMK = latexmk -use-make -xelatex -pdfxe -shell-escape \
 	-recorder \
 	-e '$$latex="latex -interaction=nonstopmode %O %S"' \
-	-e '$$pdflatex="pdflatex -interaction=nonstopmode %O %S"' 
+	-e '$$pdflatex="xelatex -interaction=nonstopmode -synctex=1 %O %S"'
 
 TEXs = $(wildcard *.tex)
 PDFs = $(subst .tex,.pdf,$(TEXs))
