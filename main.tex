@@ -53,13 +53,13 @@
 
 \date{} % Remove the date at bottom of the documment
 
-\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0
-  \parbox{\datebox}{\small \textit{#1}}\hspace{1em} {\small #2
-    #3}\vspace{.5em}}
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0%
+  \parbox{\datebox}{\small \textit{#1}}\hspace{1em} {\small #2 #3}\vspace{.5em}}
 
 % Define a command for descriptions of each entry - change spacing and font
 % sizes here
-\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\flushleft\normalsize}
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0%
+  \noindent\raggedright\footnotesize{#1}\par\flushleft\normalsize}
 
 \setlength{\textwidth}{146.8mm}
 \setlength{\oddsidemargin}{11.6mm}
