@@ -33,7 +33,6 @@
 \usepackage{lastpage}
 
 \areaset[current]{390pt}{730pt} % need some extra space
-% \usepackage[pass,showframe]{geometry}
 
 % New command defining the margin text style
 \newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\footnotesize#1}}
@@ -99,8 +98,9 @@
 \begin{cv}{%
     \noindent%
     \spacedallcaps{%
-         MATHEUS V. CORREA%
+      MATHEUS V. CORREA%
     }%
+    % Header with pic
     % \begin{minipage}{.68\textwidth}%
     %   \spacedallcaps{{\footnotesize R\'ESUM\'E}\\
     %      MATHEUS V. CORREA%
@@ -117,7 +117,10 @@
   
   % Goal
   % Birthplace and date
-  \noindent{\small\textit{Software Engineer} $\bullet$ \textit{Looking for sponsorship}}
+  \noindent{%
+    \small\textit{Software Engineer}%
+    % $\bullet$ \textit{Looking for sponsorship}%
+  }
   
   \vspace{.5em}
   
@@ -128,7 +131,8 @@
   \ProfileInfo{LinkedIn}{\href{https://www.linkedin.com/in/matheusvcorrea}{https://www.linkedin.com/in/matheusvcorrea}}
 
   % Phone number(s)
-  \ProfileInfo{phone}{+353 87 785 5487}
+  % \ProfileInfo{phone}{+353 87 785 5487}
+  \ProfileInfo{phone}{+55 11 996174 8484}
   
   \vspace{1em}
 
@@ -139,9 +143,12 @@
     Master's degree in Informatics at Universidade Federal do Paraná --
     Brazil. With more than 5 years of experience in software development that
     range from e-commerce applications, to distributed systems, and insurance
-    risk analytics with machine learning powered solutions. Strong knowledge in
-    C/C++ and Python programming languages. He has knowledge in DDD, TDD, SOLID and Design
-    Patterns aside from the main machine learning algorithms and frameworks. His main interests are in Algorithms Design, Graph Algorithms, Combinatorial Problems, and High Performance Computer Systems. A fan of good music, good food, and competitions in general.%
+    risk analysis with machine learning-powered solutions. Strong knowledge in
+    C/C++ and Python programming languages. He has knowledge in DDD, TDD, SOLID
+    and Design Patterns aside from the main machine learning algorithms and
+    frameworks. His main interests are in Algorithms Design, Graph Algorithms,
+    Combinatorial Problems, and High Performance Computer Systems. A fan of good
+    music, good food, and sport competitions in general.%
   }
 
 %-------------------------------------------------------------------------------
@@ -156,16 +163,15 @@
     \MarginText{Junto Seguros}%
     As a back-end developer, he works within the machine learning life cycle
     with an multidisciplinary team at a company that operates in the insurance
-    sector. The main responsibilities are to contribute at different phases of
-    the solution concept and implementation with technical/analytical insights
-    under a microservices architecture. Different business case applications has been
+    sector. The main responsibilities are to contribute to the solution concept
+    and implementation phases offering technical/analytical insights under a
+    microservices architecture. Different business case applications has been
     created and maintained which include but not limited to credit risk,
-    pricing, churn rate, and internal processes automation which combined add approximately
-    R\$ 10 mi.  in revenue. Moreover he contributes with the efforts to keep solutions
-    at state of the art with technology and best practices on machine learning
-    powered software with aim to continuous improve the ROI ratio. % \newline%
-    % Reference: John \textsc{McDonald}\ \ $\cdotp$\ \ +1 (000) 111 1111\ \
-    % $\cdotp$\ \ \href{mailto:john@lehman.com}{john@lehman.com}
+    pricing, churn rate, and internal processes automation which combined add
+    approximately R\$ 10 mi. in revenue. Moreover he contributes with the
+    efforts to keep solutions at state of the art with technology and best
+    practices on machine learning powered software with aim to continuous
+    improve the ROI ratio. % \newline%
   }
 
   % ------------------------------------------------
@@ -176,11 +182,10 @@
     \MarginText{Meta Serviços de Informática}%
     Worked in different phases of the software development life cycle, mainly in
     the Architecture, Implementation and Testing phases. In the Architecture
-    phase he participated in the definition of business and technical
-    solutions. In the Implementation stage, he worked in different applications,
-    especially in integration, on protocols such as JMS, RPC (XML), SOAP, REST
-    and TCP / IP (Unix Socket). In the Testing phase, he worked in automation
-    tests.%
+    phase he contributes in the definition of business and technical
+    solutions. In the Implementation stage, he worked in different applications
+    that use protocols such as JMS, RPC (XML), SOAP, REST and TCP / IP (Unix
+    Socket). In the Testing phase, he worked in automation tests.%
   }
 
   % ------------------------------------------------
@@ -190,9 +195,9 @@
 
   \Description{%
     \MarginText{C.I.T.S.}%
-    Worked in the support and development of new features in legacy
-    software. Most of the attributions was programming under the Java EE and
-    Oracle Suite (Weblogic, Oracle Data base).%
+    Most of his the attributions was to programming under the Java EE and Oracle
+    Suite (Weblogic, Oracle Data base) to create and support features in legacy
+    software.%
   }
 
   % ------------------------------------------------
@@ -208,13 +213,11 @@
 
   % ------------------------------------------------
 
-  \WorkEntry{2017 -- 2017}{Intern at Universidade Federal do Paraná}
-
-  \MarginText{More Experiences}
+  % \MarginText{More Experiences}
   
-  \WorkEntry{2013 -- 2013}{Freelance E-commerce Developer}
-
-  \vspace{.5em}
+  \WorkEntry{2017}{Intern at Universidade Federal do Paraná}
+  
+  \WorkEntry{2013}{Freelance E-commerce Developer}
   
 %-------------------------------------------------------------------------------
 %	EDUCATION
@@ -226,58 +229,66 @@
 
   \Description{%
     \MarginText{Master's Degree}%
-    Dissertation Title: \textit{Busca em Largura Lexicográfica e Algoritmos
-      Exatos para o Problema da Clique Máxima}\newline%
+    % Dissertation Title: \textit{Busca em Largura Lexicográfica e Algoritmos
+    %   Exatos para o Problema da Clique Máxima}\newline%
     Description: analytical and experimental research of performance
     improvements made using the so called lexicographic breadth-first search on
     algorithms that solve the maximum clique problem, a well know hard to
     compute graph problem.\newline%
-    Advisors: Prof.~Renato \textsc{Carmo} \& Prof.~Alexandre \textsc{Z\"uge}%
+    Related English publication available at
+    \url{http://doi.org/10.21711/231766362021/rmc4824}\newline%
+    Advisors: Prof.~Dr.~Renato \textsc{Carmo} \& Prof.~Dr.~Alexandre \textsc{Z\"uge}%
   }
-
+  
   % ------------------------------------------------
-
-  \NewEntry{2021 -- 2021}{Unicamp, Instituto de Computação -- Campinas}
-
-  \Description{%
-    \MarginText{Graduate Special Student}%
-    Description: As a graduate special student at Instituto de Computação
-    Graduate Program he attended to classes such Parallel Programming,
-    Supervised Learning, and Approximation Algorithms.%
-  }
 
   \NewEntry{2014 -- 2017}{Universidade Federal do Paraná, Campus Jandaia do Sul}
 
   \Description{%
     \MarginText{Bachelor's Degree}%
-    Monograph Title: \textit{Técnicas de Projeto de Algoritmos: Backtracking e
-    Programação Dinâmica.}\newline%
-    Description: During the graduation he has the opportunity of collaborate in
-    scientific research projects in the most traditional computer science fields
-    such as Sort Algorithms, Graphs Algorithms, Data Structure, and Algorithm
-    Design.\newline%
-    Advisor: Prof.~Alexandre \textsc{Z\"uge}%
+    % Monograph Title: \textit{Técnicas de Projeto de Algoritmos: Backtracking e
+    %   Programação Dinâmica.}\newline%
+    Description: This is a degree course gives permission to teach Computer
+    Science. During the course he has collaborated in research projects in
+    classical computer science subjects such as Sort Algorithms, Graphs
+    Algorithms, Data Structure, and Algorithm Design.\newline%
+    Monograph published at \url{https://hdl.handle.net/1884/56255}\newline%
+    Advisor: Prof.~Dr.~Alexandre \textsc{Z\"uge}%
   }
+
+  % ------------------------------------------------
+
+  \NewEntry{2021 -- 2021}{Graduate Special Student at Unicamp, IC -- Campinas}
+  
+  % \Description{%
+  %   \MarginText{Graduate Special Student}%
+  %   Description: As a graduate special student at Instituto de Computação
+  %   Graduate Program he attended to classes such Parallel Programming,
+  %   Supervised Learning, and Approximation Algorithms.%
+  % }
+
+  \vspace{1em}
 
 %-------------------------------------------------------------------------------
 %	PUBLICATIONS
 %-------------------------------------------------------------------------------
 
-  \noindent\spacedlowsmallcaps{Publications}\vspace{1em}
+  % \noindent\spacedlowsmallcaps{Publications}\vspace{1em}
 
-  \NewEntry{January 2022}{Lexicographic Breadth First-Search and Branch and
-    Bound Algorithms for the Maximum Clique Problem}
+  % \NewEntry{January 2022}{Lexicographic Breadth First-Search and Branch and
+  %   Bound Algorithms for the Maximum Clique Problem}
 
-  \Description{%
-    \MarginText{Matemática Contemporânea}%
-    We perform an experimental analysis on five branch and bound algorithms for
-    the Maximum Clique problem. The analysis is done through the usual
-    statistical hypothesis testing framework. The method shows itself powerful
-    in discriminating the cases where a new implemented heuristic is effective
-    and those where it is not.
-    \url{http://doi.org/10.21711/231766362021/rmc4824}\newline%
-    Authors: Matheus \textsc{Correa}, ~Renato \textsc{Carmo}, ~Alexandre Prusch
-    \textsc{Z\"uge}}
+  % \Description{%
+  %   \MarginText{Matemática Contemporânea}%
+  %   We perform an experimental analysis on five branch and bound algorithms for
+  %   the Maximum Clique problem. The analysis is done through the usual
+  %   statistical hypothesis testing framework. The method shows itself powerful
+  %   in discriminating the cases where a new implemented heuristic is effective
+  %   and those where it is not.
+  %   \url{http://doi.org/10.21711/231766362021/rmc4824}\newline%
+  %   Authors: Matheus \textsc{Correa}, ~Renato \textsc{Carmo}, ~Alexandre Prusch
+  %   \textsc{Z\"uge}%
+  % }
 
 %-------------------------------------------------------------------------------
 %	COMPUTER SKILLS
@@ -300,38 +311,6 @@
 
   \spacedlowsmallcaps{Other Information}\vspace{1em}
 
-  % ------------------------------------------------
-
-  % \Description{\MarginText{Awards}2011\ \ $\cdotp$\ \ School of Business
-  %   Postgraduate Scholarship}
-
-  % % Negative vertical space to counteract the vertical space
-  % % between every \Description command
-  % \vspace{-0.5em}
-
-  % \Description{2010\ \ $\cdotp$\ \ Top Achiever Award -- Commerce}
-
-  % ------------------------------------------------
-
-  % \vspace{1em}
-
-  % \Description{%
-  %   \MarginText{Communication Skills}2010\ \ $\cdotp$\ \ Oral Presentation at
-  %   the California Business Conference%
-  % }
-
-  % Negative vertical space to counteract the vertical space between every
-  % \Description command
-  % \vspace{-0.5em}
-
-  % \Description{%
-  %   2009\ \ $\cdotp$\ \ Poster at the Annual Business Conference in Oregon%
-  % }
-
-  % ------------------------------------------------
-
-  % \vspace{1em}
-
   % Create a new length for the length of languages to keep them equally spaced
   \newlength{\langbox}
 
@@ -339,40 +318,34 @@
   % your list put it here
   \settowidth{\langbox}{English}
 
+  \vspace{-0.5em}
   \Description{%
     \MarginText{Languages}%
-    \parbox{\langbox}{\textsc{Portuguese}}\hspace{.5em}\ \ $\cdotp$\ \ \ Mother tongue%
+    \parbox{\langbox}{\textsc{English}}\hspace{.5em} ---\ \ Can write and speak
+    fluently%
   }
 
-  % Negative vertical space to counteract the vertical space between every
-  % \Description command
   \vspace{-0.5em}
-
   \Description{%
-    \parbox{\langbox}{\textsc{English}}\hspace{.5em}\ \ $\cdotp$\ \ \ Can
-    communicate fluently by writing and speaking%
+    \parbox{\langbox}{\textsc{Spanish}}\hspace{.5em} ---\ \ Can communicate with
+    simple words and phrases%
   }
 
-  % Negative vertical space to counteract the vertical space between every
-  % \Description command
   \vspace{-0.5em}
-
   \Description{%
-    \parbox{\langbox}{\textsc{Spanish}}\hspace{.5em}\ \ $\cdotp$\ \ \ Basics -- can communicate
-    with simple words and phrases%
+    \parbox{\langbox}{\textsc{Portuguese}}\hspace{.5em} ---\ \ Mother tongue%
   }
 
-  % Negative vertical space to counteract the vertical space between every
-  % \Description command
   \vspace{1em}
 
   % ------------------------------------------------
 
   \Description{%
     \MarginText{Hobbies and Interests}%
-    Instruments\ \ $\cdotp$\ \ Cooking\ \ $\cdotp$\ \ Running\ \ $\cdotp$\ \
-    Movies\ \ $\cdotp$\ \ Theory of Computation\ \ $\cdotp$\ \ Computer
-    Systems\ \ $\cdotp$\ \ Science\ \ $\cdotp$\ \ Competitions in general}
+    Football (soccer)\ \ $\cdot$\ \ Instruments\ \ $\cdotp$\ \ Food and beer\ \
+    $\cdotp$\ \ Running and workout\ \ $\cdotp$\ \ Movies\ \ $\cdotp$\ \ Funny
+    scientific facts \ \ $\cdotp$\ \ Sport competitions in general%
+  }
 
 \end{cv}
 
