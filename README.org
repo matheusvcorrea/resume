@@ -1,2 +1,4 @@
-# Resume
-My curriculum vitae
+* Resume
+
+My curriculum vitae. The PDF file can be found at last executed =Build LaTeX
+document= action workflow.
