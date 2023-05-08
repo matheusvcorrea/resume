@@ -58,7 +58,7 @@
 % Define a command for descriptions of each entry - change spacing and font
 % sizes here
 \newcommand{\Description}[1]{\hangindent=2em\hangafter=0%
-  \noindent\raggedright\footnotesize{#1}\par\flushleft\normalsize}
+  \noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{.5em}}
 
 \setlength{\textwidth}{146.8mm}
 \setlength{\oddsidemargin}{11.6mm}
@@ -223,7 +223,7 @@
 %	EDUCATION
 %-------------------------------------------------------------------------------
 
-  \noindent\spacedlowsmallcaps{Education}\vspace{1em}
+  \noindent\spacedlowsmallcaps{Education}\vspace{.5em}
 
   \NewEntry{2018 -- 2020}{Universidade Federal do Paraná -- Curitiba}
 
@@ -267,8 +267,6 @@
   %   Supervised Learning, and Approximation Algorithms.%
   % }
 
-  \vspace{1em}
-
 %-------------------------------------------------------------------------------
 %	PUBLICATIONS
 %-------------------------------------------------------------------------------
@@ -309,7 +307,7 @@
 %	OTHER INFORMATION
 %-------------------------------------------------------------------------------
 
-  \spacedlowsmallcaps{Other Information}\vspace{1em}
+  \spacedlowsmallcaps{Other Information}\vspace{.5em}
 
   % Create a new length for the length of languages to keep them equally spaced
   \newlength{\langbox}
@@ -318,22 +316,22 @@
   % your list put it here
   \settowidth{\langbox}{English}
 
-  \vspace{-0.5em}
+  % \vspace{-0.5em}
   \Description{%
     \MarginText{Languages}%
     \parbox{\langbox}{\textsc{English}}\hspace{.5em} ---\ \ Can write and speak
     fluently%
   }
 
-  \vspace{-0.5em}
+  % \vspace{-0.5em}
   \Description{%
     \parbox{\langbox}{\textsc{Spanish}}\hspace{.5em} ---\ \ Can communicate with
     simple words and phrases%
   }
 
-  \vspace{-0.5em}
+  % \vspace{-0.5em}
   \Description{%
-    \parbox{\langbox}{\textsc{Portuguese}}\hspace{.5em} ---\ \ Mother tongue%
+    \parbox{\langbox}{\textsc{Portuguese}}\hspace{1.5em} ---\ \ Mother tongue%
   }
 
   \vspace{1em}
