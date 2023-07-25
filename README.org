@@ -1,4 +1,4 @@
 * Resume
 
 My curriculum vitae. The PDF file can be found at last executed =Build LaTeX
-document= action workflow.
+document= action workflow. See also [[https://github.com/matheusvcorrea/cover-letter][cover letter]].
