@@ -44,8 +44,8 @@
 \newcommand{\ProfileInfo}[2]{\noindent\hangindent=2em\hangafter=0%
   \parbox{5em}{\small \textit{#1}\hspace{1em}} {\small #2}}
 
-\newcommand{\WorkEntry}[2]{\noindent\hangindent=2em\hangafter=0%
-  {\small #2} {(\small \textit{#1}})\vspace{.5em}}
+\newcommand{\WorkEntry}[2]{\noindent\hangindent=1em\hangafter=0%
+  {\small #2} {(\small \textit{#1}})\vspace{.1em}}
 
 % Set the width of the date box in each block
 \newlength{\datebox}\settowidth{\datebox}{2020---2021}
@@ -68,6 +68,8 @@
 \setlength{\headheight}{14pt}
 % Put \marginparwidth onto the page
 \setlength{\marginparwidth}{\dimexpr\paperwidth-\oddsidemargin-1in-\textwidth-\marginparsep}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
 
 % Footer
 \clearpairofpagestyles%
@@ -77,10 +79,10 @@
     \thepage\ of \pageref{LastPage}\hfill\rule{.55\marginparwidth}{6pt}%
   }%
 }%
-% \lofoot*{%
-%   \footnotesize LinkedIn: %
-%   \href{https://www.linkedin.com/in/matheusvcorrea}{linkedin.com/in/matheusvcorrea}%
-% }
+\lofoot*{%
+  \footnotesize LinkedIn: %
+  \href{https://www.linkedin.com/in/matheusvcorrea}{linkedin.com/in/matheusvcorrea}%
+}
 
 \usepackage{tikz}
 
@@ -98,7 +100,7 @@
 \begin{cv}{%
     \noindent%
     \spacedallcaps{%
-      MATHEUS V. CORREA%
+      \textbf{MATHEUS} V. CORREA%
     }%
     % Header with pic
     % \begin{minipage}{.68\textwidth}%
@@ -118,7 +120,7 @@
   % Goal
   % Birthplace and date
   \noindent{%
-    \small\textit{Software Engineer}%
+    % \small\textit{Software Engineer}%
     % $\bullet$ \textit{Looking for sponsorship}%
   }
   
@@ -128,7 +130,7 @@
   \ProfileInfo{email}{\href{mailto:matheusviniciuscorrea@gmail.com}{matheusviniciuscorrea@gmail.com}}
 
   % Personal website
-  \ProfileInfo{LinkedIn}{\href{https://www.linkedin.com/in/matheusvcorrea}{https://www.linkedin.com/in/matheusvcorrea}}
+  % \ProfileInfo{LinkedIn}{\href{https://www.linkedin.com/in/matheusvcorrea}{https://www.linkedin.com/in/matheusvcorrea}}
 
   % Phone number(s)
   % \ProfileInfo{phone}{+353 87 785 5487}
@@ -141,14 +143,14 @@
   
   \Description{%
     Master's degree in Informatics at Universidade Federal do Paraná --
-    Brazil. With more than 5 years of experience in software development that
-    range from e-commerce applications, to distributed systems, and insurance
-    risk analysis with machine learning-powered solutions. Strong knowledge in
-    C/C++ and Python programming languages. He has knowledge in DDD, TDD, SOLID
-    and Design Patterns aside from the main machine learning algorithms and
-    frameworks. His main interests are in Algorithms Design, Graph Algorithms,
-    Combinatorial Problems, and High Performance Computer Systems. A fan of good
-    music, good food, and sports competitions in general.%
+    Brazil. More than 5 years of experience in software from e-commerce
+    apps, to distributed systems, and machine learning-powered solutions in
+    insurance industry. Strong knowledge in C/C++ and Python programming
+    languages. He also has knowledge in DDD, TDD, SOLID and Design Patterns.
+    % His main interests are in Algorithms Design, Graph Algorithms, and High
+    % Performance Computer Systems.%
+    A fan of good music, good food, and sports
+    competitions in general.%
   }
 
 %-------------------------------------------------------------------------------
@@ -157,47 +159,67 @@
 
   \noindent\spacedlowsmallcaps{Experience}\vspace{.5em}
 
-  \WorkEntry{Dec. 2020 -- Present}{Back-end Developer at \textsc{Junto Seguros} -- Remote}
+  \WorkEntry{Dec. 2020 -- Present}{ML Engineer at \textsc{Junto Seguros} -- Remote}
 
   \Description{%
     \MarginText{Junto Seguros}%
-    As a back-end developer, he works within the machine learning life cycle
-    with an multidisciplinary team at an insurance company. The main
-    responsibilities are to contribute to the solution concept and
-    implementation phases offering technical/analytical insights under a
-    microservices architecture. Different business case applications has been
-    created and maintained which include but not limited to credit risk,
-    pricing, churn rate, and internal processes automation which combined add
-    approximately R\$ 10 mi. in revenue. Moreover he contributes with the
-    efforts to keep solutions at state of the art with technology and best
-    practices on machine learning powered software with aim to continuous
-    improve the ROI ratio. % \newline%
+    \begin{itemize}
+    \item Machine learning engineer role -- data aquisition, model design,
+      model deployment -- within an multidisciplinary team at an insurance
+      company.
+    \item Adds more than R\$ 10 mi in revenue by creating and maintaining
+      industry awarded solutions for credit risk, pricing, churn rate, internal
+      processes automation, among others.
+    \item Efforts to keep solutions at state of the art on machine
+      learning-powered software with aim to continuous improve the ROI
+      ratio. E.g. applying Gen AI using Transformers architecture.
+    \end{itemize}
+    % As a back-end developer, he works within the machine learning life cycle
+    % with an multidisciplinary team at an insurance company. The main
+    % responsibilities are to contribute to the solution concept and
+    % implementation phases offering technical/analytical insights under a
+    % microservices architecture. Different business case applications has been
+    % created and maintained which include but not limited to credit risk,
+    % pricing, churn rate, and internal processes automation which combined add
+    % approximately R\$ 10 mi. in revenue. Moreover he contributes with the
+    % efforts to keep solutions at state of the art with technology and best
+    % practices on machine learning powered software with aim to continuous
+    % improve the ROI ratio. % \newline%
   }
 
   % ------------------------------------------------
 
-  \WorkEntry{May 2019 -- Jun. 2020}{Senior C++ Programmer at \textsc{Meta} -- Curitiba}
+  \WorkEntry{May 2019 -- Jun. 2020}{Senior C++ Programmer -- Curitiba}
   
   \Description{%
     \MarginText{Meta Serviços de Informática}%
-    Worked in different phases of the software development life cycle, mainly in
-    the Architecture, Implementation and Testing phases. In the Architecture
-    phase he contributes in the definition of business and technical
-    solutions. In the Implementation stage, he worked in applications that use
-    protocols such as JMS, RPC (XML), SOAP, REST and TCP / IP (Unix Socket). In
-    the Testing phase, he worked in automation tests.%
+    \begin{itemize}
+    \item Responsibilities in different phases of the software development
+      cycle, mainly in the Architecture, Implementation and Testing where he
+      contributes in business and technical solutions.
+    \item Programming under protocols such as JMS, RPC (XML), SOAP, REST and TCP
+      / IP (Unix Socket). Automation tests had crucial aspect.
+    \end{itemize}
+    % Worked in different phases of the software development life cycle, mainly in
+    % the Architecture, Implementation and Testing phases. In the Architecture
+    % phase he contributes in the definition of business and technical
+    % solutions. In the Implementation stage, he worked in applications that use
+    % protocols such as JMS, RPC (XML), SOAP, REST and TCP / IP (Unix Socket). In
+    % the Testing phase, he worked in automation tests.%
   }
 
   % ------------------------------------------------
 
-  \WorkEntry{Nov. 2018 -- April 2019}{Programmer at \textsc{Centro Internacional de
+  \WorkEntry{Nov. 2018 -- April 2019}{Programmer at \textsc{Centro Inter. de
       Tecnologia de Software}}
 
   \Description{%
     \MarginText{C.I.T.S.}%
-    Most of his attributions was to programming under the Java EE and Oracle
-    Suite (Weblogic, Oracle Data base) to create and support features in legacy
-    software.%
+    \begin{itemize}
+    \item Most of his attributions was to programming under the Java EE and Oracle
+      Suite (Weblogic, Oracle Data base) to create and support features in legacy
+      software.%
+    \end{itemize}
   }
 
   % ------------------------------------------------
@@ -206,18 +228,17 @@
   
   \Description{%
     \MarginText{Lactec}%
-    Main activities: R\&D with regard to optimization problems; studies on
-    software and systems engineering; programming on the Java EE, Python, among
-    others.%
+    \begin{itemize}
+    \item R\&D with regard to optimization problems; studies on software and
+      systems engineering; programming on the Java EE, Python, among others.%
+    \end{itemize}
   }
 
   % ------------------------------------------------
 
   % \MarginText{More Experiences}
   
-  \WorkEntry{2017}{Intern at Universidade Federal do Paraná}
-  
-  \WorkEntry{2013}{Freelance E-commerce Developer}
+  \WorkEntry{2017}{Intern at Universidade Federal do Paraná} $\cdot$  \WorkEntry{2013}{Freelance E-commerce Developer}
   
 %-------------------------------------------------------------------------------
 %	EDUCATION
@@ -234,10 +255,9 @@
     Analytical and experimental research of performance improvements made using
     the so called lexicographic breadth-first search on algorithms that solve
     the maximum clique problem, a well know hard to compute graph
-    problem. Related English publication available at
-    \url{http://doi.org/10.21711/231766362021/rmc4824}\newline%
-    Advisors: Prof.~Dr.~Renato \textsc{Carmo} \& Prof.~Dr.~Alexandre
-    \textsc{Z\"uge}%
+    problem. \url{http://doi.org/10.21711/231766362021/rmc4824}
+    % \newline Advisors: Prof.~Dr.~Renato \textsc{Carmo} \& Prof.~Dr.~Alexandre
+    % \textsc{Z\"uge}%
   }
   
   % ------------------------------------------------
@@ -249,11 +269,10 @@
     % Monograph Title: \textit{Técnicas de Projeto de Algoritmos: Backtracking e
     %   Programação Dinâmica.}\newline%
     This degree course gives permission to teach Computer Science. During the
-    course he has collaborated in research projects in classical computer
-    science subjects such as Sort Algorithms, Graphs Algorithms, Data Structure,
-    and Algorithm Design.\newline%
-    Monograph published at \url{https://hdl.handle.net/1884/56255}\newline%
-    Advisor: Prof.~Dr.~Alexandre \textsc{Z\"uge}%
+    course he has collaborated in research projects in fundamental subjects such
+    as Sort Algorithms, Graphs Algorithms, Data Structure, and Algorithm
+    Design. \url{https://hdl.handle.net/1884/56255}
+    % \newline Advisor: Prof.~Dr.~Alexandre \textsc{Z\"uge}%
   }
 
   % ------------------------------------------------
