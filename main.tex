@@ -31,21 +31,20 @@
 \usepackage{color}
 \pagenumbering{arabic}
 \usepackage{lastpage}
-\usepackage{ragged2e}
 
 \areaset[current]{390pt}{730pt} % need some extra space
 
 % New command defining the margin text style
-\newcommand{\MarginText}[1]{\marginpar{\RaggedLeft\itshape\footnotesize#1}}
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\footnotesize#1}}
 
 % Basics font styles
 \renewcommand{\cvheadingfont}{\Large\color{Black}}
 \hypersetup{colorlinks, breaklinks, urlcolor=Blue, linkcolor=Blue}
 
-\newcommand{\ProfileInfo}[2]{\noindent\hangindent=1em\hangafter=0%
+\newcommand{\ProfileInfo}[2]{\noindent\hangindent=2em\hangafter=0%
   \parbox{5em}{\small \textit{#1}\hspace{1em}} {\small #2}}
 
-\newcommand{\WorkEntry}[2]{\noindent\hangindent=.5em\hangafter=0%
+\newcommand{\WorkEntry}[2]{\noindent\hangindent=1em\hangafter=0%
   {\small #2} {(\small \textit{#1}})\vspace{.1em}}
 
 % Set the width of the date box in each block
@@ -58,8 +57,8 @@
 
 % Define a command for descriptions of each entry - change spacing and font
 % sizes here
-\newcommand{\Description}[1]{\hangindent=1em\hangafter=0%
-  \noindent\RaggedRight\footnotesize{#1}\par\normalsize\vspace{.5em}}
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0%
+  \noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{.5em}}
 
 \setlength{\textwidth}{146.8mm}
 \setlength{\oddsidemargin}{11.6mm}
